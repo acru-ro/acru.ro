@@ -1,0 +1,20 @@
+User-agent: Mediapartners-Google 
+Disallow:
+
+User-agent: zelist
+Disallow: /
+
+User-agent: Zelist Bot
+Disallow: /
+
+User-agent: zelist.ro feed parser (http://www.zelist.ro)
+Disallow: /
+
+User-agent: *
+Disallow: /wp-admin
+Disallow: /*?nomobile
+Disallow: /category/*
+
+Sitemap: https://acru.ro/sitemap.xml.gz
+Sitemap: https://acru.ro/sitemap-image.xml
+Sitemap: https://acru.ro/sitemap-video.xml

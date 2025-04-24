@@ -1,0 +1,238 @@
+/*
+File:			custom.css
+*/
+
+/*Schimb fundalul in HEADER cu o alta culoare decat alb. Pt. eliminare, sterge pur si simplu asta*/
+.custom #header { background-color:#2D3032;}
+
+
+.custom div.prev_next p {
+  float:right;
+}
+
+.custom div.prev_next p.previous {
+  float:left;
+}
+
+/*--wp-pagenavi---*/
+.wp-pagenavi { margin: 15px 0px 15px 0px; }
+.wp-pagenavi a, .wp-pagenavi a:link { font-size:14px; padding: 5px 9px; margin: 2px; text-decoration: none; border: 1px solid #e1e1c8; color: #413f36; background-color: #eeeeee; }
+.wp-pagenavi a:visited { font-size:14px; padding: 5px 9px; margin: 2px; text-decoration: none; border: 1px solid #e1e1c8; color: #413f36; background-color: #eeeeee; }
+.wp-pagenavi a:hover { font-size:14px; border: 1px solid #608e7a; color: #FFF; background-color: #FBA922; }
+.wp-pagenavi a:active { font-size:14px; padding: 5px 9px; margin: 2px; text-decoration: none; font-weight:600; border: 1px solid #e1e1c8; color: #404333; background-color: #eeeeee; }
+.wp-pagenavi span.pages { font-size:14px; padding: 5px 9px; margin: 2px 2px 2px 2px; color: #000000; border: 1px solid #e1e1c8; color: #413f36; background-color: #eeeeee; }
+.wp-pagenavi span.current { font-size:14px; padding: 5px 9px; margin: 2px; font-weight: bold; border: 1px solid #608e7a; color: #FFF; background-color: #404333; }
+.wp-pagenavi span.extend { font-size:14px; padding: 5px 9px; margin: 2px; border: 1px solid #608e7a; color: #FFF; background-color: #413f36; } 
+
+.custom li.search {
+	float:right;
+	margin-right:2.3em;
+	top:8.5px;
+	position:relative;
+}
+
+.custom li.search input[type="text"],
+    .custom li.search input[type="submit"] {
+	width:100%;
+	font-size:1.1em;
+	line-height:1.273em;
+	padding:.636em .818em;
+	-moz-border-radius: 5px ;
+	-webkit-border-radius: 5px ;
+	border-radius: 5px ;
+}
+
+/*sidebar title normal case*/
+.custom h3 { font-variant: normal ; }
+
+/*mut numarul comentariului la stanga*/
+
+.custom .comment_num {
+  float:left;
+  padding-right:7px;
+}
+
+/*face culoarea linkurilor din TITLURI sa se schimbe in culoarea backgroundului la trecerea cu mouse-ul. Apoi face acelasi lucru pentru toate celelalte linkuri */
+
+.custom .headline_area a:hover {
+color:#2D3032;
+}
+
+.custom a:hover { color: #2D3032; }
+
+/*Aliniaza teoretic orice e text in site ca justified. Sigur face justify textul din FEATURES adica rezumatele de pe prima pagina */
+.custom .format_text { text-align: justify; }
+
+/*Schimba fontul, culoarea si fundalul titlurilor in sidebar, scrie peste setarile din panoul de control */
+
+.custom .sidebar h3{background-color: #FBA922;
+-moz-border-radius: 8px; border-radius: 8px; padding: .1em .1em .1em .6em; font-weight:normal; font-size:1.5em; color:#404333;}
+
+/* Gestioneaza distanta dintre widgets in sidebar. Se poate seta si individual */
+.custom li.widget {
+   margin-bottom: 1.6em;
+}
+
+/*Gestioneaza aspect continut sidebar, distanta dintre linkurile din widget, culoare fundal. Se poate seta individual */
+
+.custom li.widget ul li{
+background:#F3F6E8;
+border:.1em solid #C7C7C7;
+border-radius:4px;
+padding:.4em;
+margin:.3em;
+}
+
+/*Modifica culoarea footer-ului in culoarea de background si aliniaza textul din copyright */
+.custom #footer {
+
+Background-color:#2D3032; text-align:center; font-size:6pt;
+
+}
+
+/*Schimba culoarea si defineste fontul datei din byline */
+.custom abbr.published {
+   font-weight:normal;
+   cursor: default;color:#404333; 
+
+}
+
+/*Defineste culoarea textului "n comentarii" de sub titluri in bylines */
+.custom .headline_meta a {
+   color: #336699;
+}
+
+/*Schimba fundalul comentariilor mele */
+.custom div#comments dt.bypostauthor,
+#comments dt.bypostauthor div.format_text { background:#E6DBB0; }
+.custom div#comments dd.bypostauthor,
+#comments dd.bypostauthor div.format_text { background:#E6DBB0; }
+/*Gestioneza spatiul dintre comentarii */
+.custom #comment_list dd { margin-bottom: 0.0em; }
+
+/*Gestioneaza tot ce tine de Related posts, articole similare */
+.custom #related_posts ul {
+	float: left;
+	margin:0;
+	overflow:hidden;
+}
+.custom #related_posts li {
+    float: left;
+    list-style: none;
+    margin: 0 0 0 35px;
+}
+
+	.custom #related_posts li:first-child {
+		margin-left:0;
+	}
+
+.custom #related_posts li a {
+	display:block;
+	font-size:12px;
+	line-height:16px;
+	text-align:left;
+	text-decoration:none;
+	color:#bb0303;
+	width:100px;
+}
+
+	.custom #related_posts li a:hover {
+		text-decoration:underline;
+	}
+
+/*Gestioneaza blockquote, citatele formatate ca atare in postari */
+
+.custom blockquote { color: #2D3032; padding-top: 10px; padding-bottom: .5px; padding-right: 5px;
+font: italic 1.2em Georgia, "Times New Roman", Times, serif; -moz-border-radius: 8px;
+-webkit-border-radius: 8px; border-radius: 8px;
+
+}
+
+.custom blockquote { background: #D2DCA7; }
+
+/* Butonul share, fostul buton Google +1, si butonul like de facebook */
+
+/* Ensure the Facebook Share button aligns properly, dar nu merge */
+.custom .fb-share-button {
+    float: left;             /* Align to the left */
+    display: inline-block;   /* Ensure inline behavior */
+    margin-right: 21px;      /* Space between buttons (if more than one) */
+    margin-top: -3px;        /* Adjust the vertical alignment */
+    padding: 5px 10px;       /* Optional: Add padding for better button size */
+}
+
+/* Optional: Add custom hover effect */
+.custom .fb-share-button:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+    border-radius: 5px;        /* Slight rounding of corners */
+}
+
+.custom .my-plus-one { float: left; display: inline; }
+.custom .fb_like { float: float: left; display: inline; margin-right: 21px; margin-top: -3px; }
+.custom .tweet-button { float: inherit; display: inline; }
+
+/* Numarul comentariilor pe prima pagina sub forma grafica */
+
+.custom #content .my-bubble {
+background:transparent url('images/my-comment-bubble.png') 0 0 no-repeat;
+float:right; padding:2px 0px; margin:0px;
+text-align:center; width:35px; height:50px;
+}
+.custom #content .my-bubble span a { display:block; text-align:center;
+border:none; color:#fff; font-family:verdana; font-size:13px; line-height:1em;
+font-weight:bold; text-decoration:none; padding:0px;
+}
+
+/* Schimbare aspect liste (ul si li)  */
+
+.custom #content ul {
+   list-style-image: none;
+   list-style-position: inside;
+   list-style-type: disc;
+}
+
+.custom #content li {
+   padding-bottom: 15px;
+}
+
+/* Meniu navigare rotunjeste Nav Menu rounded corners si regleaza distanta sus si jos de restul */
+.custom .menu, .custom .menu a, .custom .menu li ul {
+-moz-border-radius: 10px ;
+-webkit-border-radius: 10px ;
+border-radius: 10px ;
+margin-top:0.2em;
+margin-bottom:0.1em;
+}
+
+/* Calmeaza butonul de Paypal  */
+
+input[type=image] { width:auto; background: none repeat scroll 0% 0% transparent; border: none; }
+
+/* Aliniaza reclama din header  */
+
+.custom #reclama_ciocoiasca {
+float:center;
+position:absolute;
+width:728px;
+height:90px;
+margin-top:-.7em;
+margin-left: 26.7em;
+}
+
+/* schimba culoarea fundalului textului selectat  */
+::-moz-selection {
+    background-color: #dd2020;
+    color: #fff;
+}
+
+::selection {
+    background-color: #f25c05;
+    color: #fff;
+}
+
+/* culoarea anterioara pentru selectie era #dd2020  */
+
+/* ascunde mesajul comentarii inchise  */
+.custom .comments_closed p {
+  display: none;
+}
